@@ -10,7 +10,5 @@
 		"start:client": "yarn workspace client dev",
 		"start": "node scripts/run-all start:*"
 	},
-	"dependencies": {
-		"concurrently": "^8.2.0"
-	}
+	"dependencies": {}
 }
