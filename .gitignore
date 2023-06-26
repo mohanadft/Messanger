@@ -1,6 +1,5 @@
 # compiled output
-/dist
-/node_modules
+client/node_modules
 
 # Logs
 logs
@@ -53,3 +52,4 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
+node_modules
