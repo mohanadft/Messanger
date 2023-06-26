@@ -1,6 +1,8 @@
 # 🌟 Messanger
 
-![System design](/docs/system.png)
+<p align="center">
+  <img src="./docs/system.png" alt="System Design" />
+</p>
 
 ## ✏️ Description
 
