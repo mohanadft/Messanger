@@ -1,0 +1,16 @@
+{
+	"private": true,
+	"name": "messanger",
+	"workspaces": [
+		"server",
+		"client"
+	],
+	"scripts": {
+		"start:server": "yarn workspace server start:dev",
+		"start:client": "yarn workspace client dev",
+		"start": "node scripts/run-all start:*"
+	},
+	"dependencies": {
+		"concurrently": "^8.2.0"
+	}
+}
