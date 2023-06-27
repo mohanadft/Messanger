@@ -52,3 +52,4 @@ lerna-debug.log*
 *.sln
 *.sw?
 node_modules
+.env
