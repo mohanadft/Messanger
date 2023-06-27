@@ -1,7 +1,7 @@
 # 🌟 Messanger
 
 <p align="center">
-  <img src="./docs/system.png" alt="System Design" />
+  <img src="./docs/system-design.png" alt="System Design" />
 </p>
 
 ## ✏️ Description
