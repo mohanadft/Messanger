@@ -22,14 +22,7 @@ This project is a Messenger clone that aims to replicate the functionality of po
 
 ## 💻 Installation
 
-To install and run the project locally, follow these steps:
-
-1. Clone the repository: `git clone https://github.com/mohanadft/Messanger.git`
-2. Navigate to the project directory: `cd Messanger`
-3. Install dependencies: `yarn install`
-4. Start the development server: `yarn start:server`
-5. Start the development client: `yarn start:client`
-6. Start the development of both: `yarn start`
+[Installation](./docs/InstallS.md)
 
 ## 🙌 Contributing
 
