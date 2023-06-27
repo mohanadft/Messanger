@@ -5,9 +5,7 @@ import { ClientProxy } from '@nestjs/microservices';
 export class AppController {
   constructor(
     @Inject('AUTH_SERVICE') private readonly authService: ClientProxy,
-  ) {
-    this.authService.connect();
-  }
+  ) {}
 
   @Get()
   async getUser() {
