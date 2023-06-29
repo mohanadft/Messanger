@@ -1,5 +1,6 @@
 import { Controller, Get, Inject } from '@nestjs/common';
 import { ClientProxy } from '@nestjs/microservices';
+import { timeout } from 'rxjs';
 
 @Controller()
 export class AppController {
@@ -9,6 +10,6 @@ export class AppController {
 
   @Get()
   async getUser() {
-    return this.authService.send({ cmd: 'get-user' }, {});
+    return this.authService.send({ cmd: 'get-user' }, {}).pipe(timeout(5000));
   }
 }
