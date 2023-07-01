@@ -39,3 +39,18 @@ services:
       - .:/usr/src/app
       - /usr/src/app/node_modules
     command: yarn run start:dev server
+  postgres:
+    image: postgres
+    restart: always
+    env_file:
+      - ./.env
+    ports:
+      - '5432:5432'
+  postgres_admin:
+    image: dpage/pgadmin4
+    depends_on:
+      - postgres
+    env_file:
+      - ./.env
+    ports:
+      - '15432:80'
