@@ -18,6 +18,6 @@ export class AuthController {
 
     channel.ack(message);
 
-    return { user: 'USER' };
+    return { user: 'USER!' };
   }
 }

@@ -10,6 +10,6 @@ export class AppController {
 
   @Get()
   async getUser() {
-    return this.authService.send({ cmd: 'get-user' }, {}).pipe(timeout(5000));
+    return this.authService.send({ cmd: 'get-user' }, {});
   }
 }

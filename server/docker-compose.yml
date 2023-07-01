@@ -11,3 +11,31 @@ services:
       - '15672:15672'
     env_file:
       - ./.env
+  auth:
+    build:
+      context: ./
+      dockerfile: ./apps/auth/Dockerfile
+    env_file:
+      - ./.env
+    depends_on:
+      - rabbitmq
+      - postgres
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    command: yarn run start:dev auth
+  api:
+    build:
+      context: ./
+      dockerfile: ./apps/server/Dockerfile
+    ports:
+      - '4000:5000'
+    env_file:
+      - ./.env
+    depends_on:
+      - rabbitmq
+      - auth
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    command: yarn run start:dev server

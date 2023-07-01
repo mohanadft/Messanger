@@ -28,6 +28,7 @@
     "@nestjs/microservices": "^10.0.3",
     "@nestjs/platform-express": "^10.0.0",
     "@nestjs/platform-socket.io": "^10.0.3",
+    "@nestjs/typeorm": "^10.0.0",
     "@nestjs/websockets": "^10.0.3",
     "amqp-connection-manager": "^4.1.13",
     "amqplib": "^0.10.3",
@@ -35,8 +36,10 @@
     "kafkajs": "^2.2.4",
     "mqtt": "^4.3.7",
     "nats": "^2.15.1",
+    "pg": "^8.11.1",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "typeorm": "^0.3.17"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",
